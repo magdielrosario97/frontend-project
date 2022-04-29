@@ -1,7 +1,7 @@
 let $body = document.body
 let $container = $('.container')
 
-$.get('http://ergast.com/api/f1/2022/drivers.json', function (data) {
+$.get('https://ergast.com/api/f1/2022/drivers.json', function (data) {
     createDriverList(data)
 })
 
@@ -30,7 +30,7 @@ function createDriverList(data) {
 }
 
 // // Select a year for list of F1 Drivers
-// $.get(`http://ergast.com/api/f1/drivers.json`, function (data) {
+// $.get(`https://ergast.com/api/f1/drivers.json`, function (data) {
 //     console.log(data)
 // })
 

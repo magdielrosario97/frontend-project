@@ -2,7 +2,7 @@ let $body = document.body
 let $container = $('.container')
 // Creates Previous Race Results
 function previousRaceResults() {
-    $.get("http://ergast.com/api/f1/current/last/results.json", function(data) {
+    $.get("https://ergast.com/api/f1/current/last/results.json", function(data) {
 
         const resultData = data.MRData.RaceTable.Races[0]
         const $resultContainer = $(`<div class='resultContainer'></div>`)

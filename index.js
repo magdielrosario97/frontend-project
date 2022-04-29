@@ -2,12 +2,12 @@ let $body = document.body
 let $container = $('.container')
 
 // Request next race data and invokes createUpcomingRaceCard to next race card
-$.get("http://ergast.com/api/f1/current/next.json", function(data) {
+$.get("https://ergast.com/api/f1/current/next.json", function(data) {
     createUpcomingRaceCard(data)
 });
 
 // Request current season schedule and creates schedule
-$.get("http://ergast.com/api/f1/current.json", function(data) {
+$.get("https://ergast.com/api/f1/current.json", function(data) {
     createSchedule(data)
 })
 
