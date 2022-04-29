@@ -1,0 +1,246 @@
+/* ------------------------ HTML/HEADER/TITLE/NAV BAR ------------------------------- */
+* {
+    font-family: 'Titillium Web';
+    text-decoration: none;
+}
+
+html {
+    background: linear-gradient(to right, #870000, #190a05);
+}
+
+body {
+    margin: 0% 1px 0% 1px;
+    zoom: 150%;
+}
+
+.header {
+    background-color: white;
+    font-variant-caps: all-small-caps;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Racing Sans One';
+    margin: 0%;
+    color: red;
+    font-size: 50px;
+}
+
+
+
+.navBar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    min-width: max-content;
+    padding: 0%;
+    background-color: red;
+    margin: 0%
+}
+
+.navBar > div {
+    width: -webkit-fill-available;
+    text-align: center;
+    white-space: nowrap;
+    color: red
+}
+
+.navBar > div:hover {
+    background-color: darkred
+}
+
+.navBar > div > a {
+    color: white
+}
+
+/* ------------------------ HOME ------------------------------- */
+
+.nextRaceContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: max-content;
+    padding: 5px;
+    margin: auto;
+    color: white
+}
+
+.nextRaceContainer > #raceInfo {
+    margin: 0%;
+    color: red
+}
+
+.nextRaceContainer > #raceName {
+    font-variant-caps: all-small-caps;
+    font-size: 25px;
+    color: red
+}
+
+.resultContainer {
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    text-align: center;
+    align-items: center;
+}
+
+#resultInfo {
+    color: red;
+    margin: 0%
+}
+
+#resultGP {
+    color: white;
+    font-variant-caps: all-small-caps;
+}
+
+table {
+    width: max-content;
+    box-shadow: -6px 5px 12px 3px;
+    border-collapse: collapse;
+}
+
+th, tr, td {
+    padding: 0px 3px 0px 3px;
+}
+
+th {
+    background-color: red;
+    color: white
+    
+}
+
+tr {
+    background-color: white;
+}
+
+
+#exit {
+    align-self: flex-end;
+    position: absolute;
+    padding: 2px;
+    margin: 6px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: white
+}
+
+.seasonSchedule {
+    display: grid;
+    grid-gap: 5px;
+    text-align: center;
+}
+
+#raceList {
+    font-family: 'Racing Sans One';
+    font-size: 25px;
+    color: white;
+    margin: 0%
+}
+
+.raceCard {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    text-align: center;
+    grid-template-areas:
+     "round gp date"
+     "round track date"
+     "round location date";
+    background: linear-gradient(90deg, rgba(143, 0, 0, 0.5242471988795518) 0%, rgba(255, 255, 255, 1) 100%);
+    border-radius: 15px;
+    box-shadow: -9px 5px 8px 0px;
+    border: solid gray
+     
+}
+
+.raceCard:hover {
+    mix-blend-mode: hard-light
+}
+
+.raceCard > #round {
+    grid-area: round;
+    place-self: center;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+.raceCard > #gp {
+    grid-area: gp;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    font-size: 30px;
+}
+
+#gp > a {
+    color: white;
+}
+
+.raceCard > #track {
+    grid-area: track;
+}
+
+.raceCard > #location {
+    grid-area: location;
+}
+
+.raceCard > #date {
+    grid-area: date;
+    padding: 10px;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+}
+
+/*------------------------------ ABOUT PAGE -------------------------------*/
+.about {
+    margin: 15px;
+}
+
+.about > h2, p  {
+    color: white
+}
+
+/* ---------------------------- PREVIOUS RACE --------------------------- */
+#prevTitle {
+        margin: 0%;
+        color: white;
+        text-align: center;
+}
+
+/* ---------------------------- Drivers ---------------------------------- */
+#driverTitle {
+    margin: 0%;
+    color: white;
+    text-align: center;
+}
+
+#driverSum {
+    text-align: center;
+    color: white
+}
+
+.driverCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background: white;
+    border: white solid;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 4px white;
+}
+
+.driverCard > div {
+    color: red;
+    text-align: center;
+    width: -webkit-fill-available;
+}
+
+.driverCard > div > a {
+    color:darkred
+}
