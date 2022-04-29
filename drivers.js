@@ -23,8 +23,14 @@ function createDriverList(data) {
                 $(`<div>${permNumber}</div>`),
                 $(`<div>${fullName}</div>`),
                 $(`<div>${nationality}</div>`),
-                $(`<div><a href='${driverData[i].url}'>Biography</a></div>`),
+                $(`<div><a href='${driverData[i].url}' target='_blank'>Biography</a></div>`),
             ])
         ])
     }
 }
+
+// // Select a year for list of F1 Drivers
+// $.get(`http://ergast.com/api/f1/drivers.json`, function (data) {
+//     console.log(data)
+// })
+

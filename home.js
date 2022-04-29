@@ -29,7 +29,7 @@ function createUpcomingRaceCard(data) {
         const trackName = race[i].Circuit.circuitName
         const trackLocation = `${race[i].Circuit.Location.locality}, ${race[i].Circuit.Location.country}`
         $nextRaceContainer.append([
-            $(`<a href='${race[i].url}' id='raceName'>${raceName}</a>`),
+            $(`<a id='raceName' href='${race[i].url}' target="_blank">${raceName}</a>`),
             $(`<div id='raceDate'>${raceDateAndTime}</div>`),
             $(`<div id='trackName'>${trackName}</div>`),
             $(`<div id='trackLocation'>${trackLocation}</div>`)
@@ -52,7 +52,7 @@ function createSchedule(data) {
         const nRaceTrack = races[i].Circuit.circuitName
         const nRaceLocation = `${races[i].Circuit.Location.locality}, ${races[i].Circuit.Location.country}`
         $scheduleContainer.append([
-            $(`<div class='raceCard' ><a href="${races[i].url}"></a></div>`).append([
+            $(`<div class='raceCard' ><a href="${races[i].url}" target='_blank'></a></div>`).append([
             $(`<div id='round'>Round ${nRaceRound}</div>`),
             $(`<div id='gp'>${nRaceGP}</div>`),
             $(`<div id='date'>${nRaceDate}</div>`),
