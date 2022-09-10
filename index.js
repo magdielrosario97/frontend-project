@@ -75,3 +75,20 @@ $resultBox.on('click', () => {
     $showResult.show()
     createExit($showResult)
 })
+
+$.get('https://en.wikipedia.org/w/api.php?action=query&titles=Formula_One&format=json&origin=*', function(data) {
+    console.log(data)
+})
+
+// function pastDate (raceDate) {
+//     const currentDate = new Date()
+//     if (raceDate < currentDate) {
+//         // do something to the div
+//     }
+// }
+
+// function getCurrentDate(date) {
+//     const today = new Date()
+//     const year = today.getFullYear().toString().slice(-2)
+//     const month = 
+// }
